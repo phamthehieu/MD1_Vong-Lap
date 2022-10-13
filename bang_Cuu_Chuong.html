@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<script>
+  let mun;
+  mun = "<table border='1' width='900px' cellspacing='0' cellpadding='5'>"
+  for (a = 1; a <= 10; a++) {
+      mun = mun + "<tr>";
+      for (b = 1; b <= 10; b++) {
+          mun = mun + "<td>" + a + " * " + b + " = " + (a + b) + "</td>";
+      }
+      mun = mun + "</tr>";
+  }
+  mun = mun + "</table>";
+  document.write(mun);
+</script>
+</body>
+</html>
